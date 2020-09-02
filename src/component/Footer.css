@@ -1,0 +1,78 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0px;
+    height: 65px;
+    width: 97%;
+    background-color: #282828;
+    padding: 20px;
+}
+
+.footer_left {
+    /* take 30% width of entire flex-box */
+    flex: 0.3;
+    display: flex;
+    align-items: center;
+    color: white;
+
+    /* because some time somg is very long & we don't want it to go over..  */
+    width: 300px;
+}
+
+
+.footer_albumLogo {
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.footer_center {
+    flex:0.4;
+
+    /* 0 on top&bottom , 100 on left&right */
+    padding: 0 100px;
+    
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    /* not spread more than 300px */
+    max-width: 300px;
+}
+
+.footer_right {
+    flex: 0.3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+/* shuffle & Repeat icon */
+.footer_green {
+    color: #1ed15e;
+}
+
+.footer_songInfo > h4 {
+    margin-bottom: 5px;
+}
+
+.footer_songInfo > p {
+    font-size: 12px;
+}
+
+.footer_icon:hover,
+.footer_green:hover {
+    transition: transform 200ms ease-in-out;
+    transform: scale(1.2) !important;
+    cursor: pointer;
+}
+
+/* go to 'footer_right' & any material-ui slider ('.MuiSlider-root' this is the actual class name of slider)  */
+.footer_right * .MuiSlider-root {
+    color: green;
+}
+

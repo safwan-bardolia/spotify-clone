@@ -1,0 +1,25 @@
+.login {
+    display: grid;
+    place-items: center;
+
+    /* take the entire height of the page (vh-view height)  */
+    height: 100vh;
+
+    background-color: black;
+}
+
+.login > img {
+    /* object-fit: contain; */
+    width: 100%;
+}
+
+.login > a {
+    padding:20px;
+    background-color: #1db954;
+    border-radius: 99px;
+    font-weight: 800;
+    color: white;
+
+    /* remove underline of anchor tag */
+    text-decoration: none;
+}

@@ -1,3 +1,12 @@
+/* hide the scrollbar but keep the functionality, here we are targetting entire app */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  margin: 0;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

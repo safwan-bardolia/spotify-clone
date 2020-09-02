@@ -1,0 +1,44 @@
+.sidebar {
+    /* take the entire height */
+    height: 100vh;
+
+    /* take 20% width of entire flex-box */
+    flex:0.2;
+    
+    color: white;
+    background-color: #040404;
+
+    /* it is useful on small screen, see by changing screen ratio */
+    min-width: 230px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sidebar_logo {
+    height: 70px;
+
+    /* we don't need object-fit while changing img height, we do when we modify img width */
+    /* object-fit: contain; */
+
+    padding: 10px;
+
+    /* so it is align to left on bigger screen */
+    margin-right: auto;
+}
+
+.sidebar_playlistsTitle {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.sidebar > hr {
+    border: 1px solid #282828;
+    
+    /* not touches everything */
+    width: 90%;
+    
+    /* ceter it 10px above & below */
+    margin: 10px auto;
+}
