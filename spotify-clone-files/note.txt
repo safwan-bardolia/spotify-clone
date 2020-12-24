@@ -1,0 +1,2 @@
+for deployment change redirect url in both spotify.js
+& also from spotify-dashboard

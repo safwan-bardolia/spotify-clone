@@ -1,0 +1,16 @@
+(see fig 2.component tree)
+
+.as you can see we have <App/> comp,
+ inside it we have <Player/>, <Login/> comp,
+ inside <Player/> comp we have <Header/>, <SideBar> comp.
+ inside <SideBar> we have other nested small component
+
+.so all this component required user info
+
+.we have access user info in <App/> component
+
+.so we use 'Context-Api'.
+
+.we pass user info from <App/> to its child component
+
+.so with the help of context-api this info is available to all of its nested child component

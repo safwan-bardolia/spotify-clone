@@ -1,0 +1,42 @@
+1.create-react-app
+2.add project on firebase
+
+3.go to spotify-developer-dashboard(because we are using spotify api)
+
+	.add your project there
+	.copy clientId there
+	.edit setting->redirect-url (add 'http://localhost:3000/' in there)
+
+____________________________________________________________________________________________________
+
+steps:
+
+1.add login feature (so create <Login/> component)
+
+2.for authorization we use spotify api, so create spotifie/index.js file which contain all the spotify property
+  (see file 3)
+
+3.updat <App/> component to use state (see file 4)	
+
+4.add dependency for spotify(wrapper around spotify-web-api, wrapper:easy way of interacting with spotify api) 
+	npm install spotify-web-api-js
+	
+	.import it in <App/> component
+
+	import SpotifyWebApi from 'spotify-web-api-js';
+
+	// super object, which is responsible for interaction between our React app with actual Spotify app
+	const spotify = new SpotifyWebApi();
+
+	// but for interaction we need access_token, so once we get token from url provide that token to spotify instance
+ 
+ useEffect(()=>{
+    const hash = getTokenFromUrl();
+    window.location.hash="";
+    const _token = hash.access_token;
+    if(_token) {
+      setToken(_token);
+      spotify.setAccessToken(_token);		//***********
+    }    
+  },[]);
+	

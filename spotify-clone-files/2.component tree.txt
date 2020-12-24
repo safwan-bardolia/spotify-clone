@@ -1,0 +1,46 @@
+	<App>
+		<Login>
+			// spotify logo
+			// login with spotify button
+
+		<Login/>
+
+
+		<Player>
+			<SideBar>	
+				<SidebarOption/>	// multiple <SidebarOption/> using map()
+				<SidebarOption/>
+				<SidebarOption/>
+					.
+					.
+					.
+			<SideBar/>
+
+			<Body>
+				<Header/>
+
+				{/* banner section, we can use in a separate component also */}
+				<div className="body_info">
+				</div>
+
+		                {/* another section, we can use in a separate component also */}
+            			<div className="body_songs">
+	
+			                <div className="body_icons">
+			                </div>
+			
+					<SongRow/>				
+					<SongRow/>	// mutiple <SongRow/> using map()
+					<SongRow/>
+					    .
+					    .	
+				</div>
+	
+				
+
+				
+			<Body/>
+
+			<Footer/>	(here music-playbar is footer)
+		<Player/>
+	<App/>
