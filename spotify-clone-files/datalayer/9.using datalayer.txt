@@ -1,0 +1,12 @@
+**App.js**
+
+import {useDataLayerValue} from '../DataLayer';     // to pull info from DataLayer
+
+  // special syntax to pull info from DataLayer, (if we need to grab anything from DataLayer, we need to put into object) such as const[{user, id, ...}, ] = useDataLayerValue()
+
+  // dispatch: to dispatch action, by which we can update datalayer 
+  const [{ }, dispatch] = useDataLayerValue();
+	  |
+	destructuring context-state object
+
+

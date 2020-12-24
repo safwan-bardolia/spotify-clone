@@ -1,0 +1,26 @@
+export const initialState = {
+    user: null,
+    playLists: [],      // 
+    playing: false,     // is the song playing?
+    item:null           // what song you are listening?
+}
+
+// reducer takes some existing amount of data(here 'state' of DataLayer, at start this 'state' is 'initialState') & action object
+const reducer = (state, action) => {
+    console.log(action);
+    
+    // Action => type, payload
+
+    switch (action.type) {
+        case 'SET_USER':
+            // return new state by updating user property
+            return {
+                ...state, user: action.user
+            }
+    
+        default:
+            return state;
+    }
+}
+
+export default reducer;
